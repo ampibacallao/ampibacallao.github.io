@@ -269,7 +269,7 @@ nav ul li a {
   letter-spacing: 5px;
   margin-bottom: 10px;
   text-transform: capitalize;
-  color:#FFB6C1;
+  color:#FF69B4;
   font-weight: 500;
 }
 
@@ -290,6 +290,27 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 /*  Aout-us
 /*-----------------------------------------------------------------------------------*/
+#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+
+#about_me {
+  background: url("../images/a.png") repeat scroll center center / cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#a{
+  background: url("../images/me.jpg") repeat scroll center center / cover;
+  height: 100vh;
+  width: 100%;
+}
 
 #about {
   width: 100%;

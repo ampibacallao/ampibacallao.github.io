@@ -54,7 +54,7 @@
 
         <ul class="nav-menu list-unstyled">
           <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#about_me" class="smoothScroll">About</a></li>
           <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
           <li><a href="#journal" class="smoothScroll">Blog</a></li>
           <li><a href="#contact" class="smoothScroll">Contact</a></li>
@@ -89,46 +89,23 @@
   </div>
   <!-- End section header -->
 
+  <!-- start section about us just an image-->
+  <div id="about_me" class="paddsection"></div>
+
+   <div id="a" class="paddsection"></div>
+  <!-- end section about us just an image-->
 
   <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/me.jpg" class="img-responsive" alt="me">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading"> About Me  </p>
-            <p class="separator">  Ampi Bacallao is a multi-media Public Relation student at the University of Florida College of Journalism and Communications.</p>
-            <p class="separator">   She has work experience in graphic design, advertising and photography, social media, web design, and public relation through different clients she worked with since she was 17-years-old.</p>
-            <p class="separator">    Through the Radio Reading Service at the University of Florida, Ampi broadcasts live every Wednesday through WUFT Media, a travel segment that caters to impaired people. </p>
-            <p class="separator">  She is an active member of the University of Florida Public Relation Student Society where she currently is a mentor for two students helping them through their public relation journey.</p>
-            <p class="separator">  Ampi is an award-winning photographer who has won numerous competitions and has had her photography work published. She also got an art scholarship award named after her for all her hard work.</p>
-            <p class="separator">   Aside from her extensive professional involvement, you can find Ampi enjoying going on trail walks, taking pictures, traveling, and helping the community.</p>
-
-
-
-
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- end section about us -->
 
-
+<div id="services">
+    <div class="container">
+        <img src = "images/screen.png"></img>
+    </div>
+  </div>
   <!-- start section services -->
-  <div id="services">
+  <div>
     <div class="container">
 
         <div class="services-carousel owl-theme">
@@ -188,64 +165,8 @@
   </div>
   <!-- end section services -->
  <!-- start section services -->
-  <div id="services">
-    <div class="container">
+  
 
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <i class="ion-ios-browsers-outline"></i>
-            <span>UI/UX DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-lightbulb-outline"></i>
-            <span>BRAND IDENTITY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DESIGN</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-social-android-outline"></i>
-            <span>MOBILE APPS</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Analytics</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-        </div>
-
-    </div>
-
-  </div>
   <!-- end section services -->
 
   <!-- start section portfolio -->
@@ -258,6 +179,7 @@
     </div>
 
     <div class="container">
+
       <div class="row">
         <div class="col-md-12">
 
@@ -276,10 +198,13 @@
 
           <div class="portfolio-container">
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
-              </a>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <p class="text-center mt-5">
+        <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal">See Why Solodev WXP</a>
+      </p>
+      <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
@@ -493,6 +418,14 @@
   <!-- End section footer -->
 
   <!-- JavaScript Libraries -->
+  <script>
+        $(document).ready(function() {
+          $('#headerVideoLink').magnificPopup({
+            type:'inline',
+            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+          });         
+        });
+  </script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
