@@ -267,10 +267,14 @@ nav ul li a {
   font-size: 10px;
   font-style: Trebuchet MS;  
   letter-spacing: 5px;
-  margin-bottom: 150px;
+  margin-bottom: 5px;
   text-transform: capitalize;
   color: #FF69B4;
   font-weight: 500;
+}
+
+.header-content ul{
+  margin-bottom: 300px;
 }
 
 .header-content .list-social li {
@@ -280,7 +284,7 @@ nav ul li a {
 
 .header-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 /*-----------------------------------------------------------------------------------*/
